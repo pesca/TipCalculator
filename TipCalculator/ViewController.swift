@@ -21,20 +21,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let bodyFontDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: UIFontTextStyle.body)
-        let bodyMonospacedNumbersFontDescriptor = bodyFontDescriptor.addingAttributes(
-            [
-                UIFontDescriptorFeatureSettingsAttribute: [
-                    [
-                        UIFontFeatureTypeIdentifierKey: kNumberSpacingType,
-                        UIFontFeatureSelectorIdentifierKey: kMonospacedNumbersSelector
-                    ]
-                ]
-            ])
-        let bodyMonospacedNumbersFont = UIFont(descriptor: bodyMonospacedNumbersFontDescriptor, size: 0.0)
-        tipLabel?.font = bodyMonospacedNumbersFont
-        billLabel?.font = bodyMonospacedNumbersFont
-        totalLabel?.font = bodyMonospacedNumbersFont
+        let featureSettings = [UIFontFeatureTypeIdentifierKey: kNumberSpacingType, UIFontFeatureSelectorIdentifierKey: kMonospacedNumbersSelector]
+        let attributes = [UIFontDescriptorFeatureSettingsAttribute: [featureSettings]]
+        let fontDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: UIFontTextStyle.body).addingAttributes(attributes)
+        let numbersFont = UIFont(descriptor: fontDescriptor, size: 0.0)
+        
+        tipLabel?.font = numbersFont
+        billLabel?.font = numbersFont
+        totalLabel?.font = numbersFont
         
         textField?.becomeFirstResponder()
     }
