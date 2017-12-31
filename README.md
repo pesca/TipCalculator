@@ -21,8 +21,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] Using the system font's monospaced numbers feature
-- [x] Adding a clear button to reset the bill amount
+- [x] Using the system font's monospaced numbers feature. This way the decimal point does not move when the bill amount is updated.
+- [x] Clear button to reset the bill amount.
 
 ## Video Walkthrough 
 
