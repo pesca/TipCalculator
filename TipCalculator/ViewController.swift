@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var textField: UITextField?
     @IBOutlet var billLabel: UILabel?
@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         totalLabel?.font = numbersFont
         
         textField?.becomeFirstResponder()
+        textField?.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,6 +73,12 @@ class ViewController: UIViewController {
         
         str.insert(".", at: str.index(str.endIndex, offsetBy: -2))
         return "$\(str)"
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let textLen = textField.text?.lengthOfBytes(using: String.Encoding.ascii)
+        let stringLen = string.lengthOfBytes(using: String.Encoding.ascii)
+        return (textLen! + stringLen - range.length) <= 8
     }
 }
 
