@@ -39,6 +39,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func clear(_ sender: UIBarButtonItem) {
+        textField?.text = nil
+        editingChanged(textField!)
+    }
+    
     @IBAction func valueChanged(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:

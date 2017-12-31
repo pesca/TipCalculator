@@ -93,7 +93,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.90464168787002563" green="0.94180363416671753" blue="0.97770148515701294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="TipCalculator" id="EJD-5O-zgT"/>
+                    <navigationItem key="navigationItem" title="TipCalculator" id="EJD-5O-zgT">
+                        <barButtonItem key="rightBarButtonItem" title="Clear" style="plain" id="Alb-gZ-pcQ">
+                            <connections>
+                                <action selector="clear:" destination="BYZ-38-t0r" id="krZ-W9-rr7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billLabel" destination="DPf-CW-RHW" id="Sb5-CC-HLH"/>
                         <outlet property="percentSegmentControl" destination="Sjk-Kk-26M" id="kdo-4y-lP1"/>
