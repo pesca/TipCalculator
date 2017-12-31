@@ -53,7 +53,7 @@ class ViewController: UIViewController {
     
     @IBAction func editingChanged(_ sender: UITextField) {
         let bill = Int(sender.text!) ?? 0
-        let tip = bill / percent
+        let tip = bill * percent / 100
         billLabel?.text = format(num: bill)
         tipLabel?.text = format(num: tip)
         totalLabel?.text = format(num: tip + bill)
