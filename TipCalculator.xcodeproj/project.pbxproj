@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D45EF0B31FF9993400B7A67A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D45EF0B21FF9993400B7A67A /* README.md */; };
+		D45EF0B51FF9A97000B7A67A /* walkthrough.gif in Resources */ = {isa = PBXBuildFile; fileRef = D45EF0B41FF9A97000B7A67A /* walkthrough.gif */; };
 		D4B4B2961FE8CF1E00DD18BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4B2951FE8CF1E00DD18BE /* AppDelegate.swift */; };
 		D4B4B2981FE8CF1E00DD18BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4B2971FE8CF1E00DD18BE /* ViewController.swift */; };
 		D4B4B29B1FE8CF1F00DD18BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B4B2991FE8CF1F00DD18BE /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D45EF0B21FF9993400B7A67A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D45EF0B41FF9A97000B7A67A /* walkthrough.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = walkthrough.gif; sourceTree = "<group>"; };
 		D4B4B2921FE8CF1E00DD18BE /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B4B2951FE8CF1E00DD18BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4B4B2971FE8CF1E00DD18BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				D4B4B2A91FE8CF1F00DD18BE /* TipCalculatorTests */,
 				D4B4B2B41FE8CF1F00DD18BE /* TipCalculatorUITests */,
 				D4B4B2931FE8CF1E00DD18BE /* Products */,
+				D45EF0B21FF9993400B7A67A /* README.md */,
+				D45EF0B41FF9A97000B7A67A /* walkthrough.gif */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,7 +242,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4B4B2A01FE8CF1F00DD18BE /* LaunchScreen.storyboard in Resources */,
+				D45EF0B51FF9A97000B7A67A /* walkthrough.gif in Resources */,
 				D4B4B29D1FE8CF1F00DD18BE /* Assets.xcassets in Resources */,
+				D45EF0B31FF9993400B7A67A /* README.md in Resources */,
 				D4B4B29B1FE8CF1F00DD18BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
